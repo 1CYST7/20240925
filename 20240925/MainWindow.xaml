@@ -7,42 +7,86 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="540" Width="715">
     <Grid>
-        <StackPanel Margin="22,25,0,0" Background="#FFF9EEEE" Height="240" VerticalAlignment="Top" HorizontalAlignment="Left" Width="455">
-            <StackPanel Height="40" Margin="5,0,5,0" Orientation="Horizontal" >
-                <Label Content="紅茶大杯" VerticalContentAlignment="Center" Foreground="#FFB79696" FontSize="16" FontWeight="Bold" Margin="20, 0, 50, 0"/>
-                <Label Content="60元" VerticalContentAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="#FF7A7A9C" Margin="0, 0, 100, 0"/>
-                <TextBox TextAlignment="Right" VerticalContentAlignment="Center" Width="100" Height="30" FontSize="16" Padding="0,0,5,0" TextChanged="TextBox_TextChanged"/>
+        <!--1.設定stackpanel邊距和背景顏色 2.設定高度寬度和排版方式-->
+		<StackPanel Margin="20,25,0,0" Background="#FFF9EEEE" 
+					VerticalAlignment="Top" HorizontalAlignment="Left" Height="240"  Width="455">
+            <!--1.設定stackpanel邊距 2.設定高度和底下label的方向性-->
+                <!--兩個label都是1.設定顯示內容和邊距 2.設定字體垂直排版方式和大小、粗細、顏色-->
+			    <!--1.設定textbox內邊距 2.設定高度寬度 3.設定字體大小、排版方式 3.設定觸發的動作-->
+            <StackPanel  Margin="5,0,5,0" 
+                          Orientation="Horizontal" Height="40">
+                <Label Content="紅茶大杯" Margin="20, 0, 50, 0" 
+                       VerticalContentAlignment="Center" Foreground="#FFB79696" FontSize="16" FontWeight="Bold" />
+                <Label Content="60元" Margin="0, 0, 50, 0" 
+                       VerticalContentAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="#FF7A7A9C" />
+				<TextBox Padding="0,0,5,0" 
+						 Width="100" Height="30" 
+						 TextAlignment="Right" VerticalContentAlignment="Center"  FontSize="16"  
+						 TextChanged="TextBox_TextChanged"/>
             </StackPanel>
-
-            <StackPanel Height="40" Margin="5,0,5,0" Orientation="Horizontal" >
-                <Label Content="紅茶小杯" VerticalContentAlignment="Center" Foreground="#FFB79696" FontSize="16" FontWeight="Bold" Margin="20, 0, 50, 0"/>
-                <Label Content="40元" VerticalContentAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="#FF7A7A9C" Margin="0, 0, 100, 0"/>
-                <TextBox TextAlignment="Right" VerticalContentAlignment="Center" Width="100" Height="30" FontSize="16" Padding="0,0,5,0" TextChanged="TextBox_TextChanged"/>
+            <StackPanel  Margin="5,0,5,0" 
+                         Orientation="Horizontal" Height="40"  >
+                <Label Content="紅茶小杯" Margin="20, 0, 50, 0"
+                       VerticalContentAlignment="Center" Foreground="#FFB79696" FontSize="16" FontWeight="Bold" />
+                <Label Content="40元" Margin="0, 0, 50, 0"
+                       VerticalContentAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="#FF7A7A9C" />
+				<TextBox Padding="0,0,5,0"
+						 Width="100" Height="30"
+						 TextAlignment="Right" VerticalContentAlignment="Center"  FontSize="16"
+						 TextChanged="TextBox_TextChanged"/>
             </StackPanel>
-            <StackPanel Height="40" Margin="5,0,5,0" Orientation="Horizontal" >
-                <Label Content="綠茶大杯" VerticalContentAlignment="Center" Foreground="#FFB79696" FontSize="16" FontWeight="Bold" Margin="20, 0, 50, 0"/>
-                <Label Content="50元" VerticalContentAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="#FF7A7A9C" Margin="0, 0, 100, 0"/>
-                <TextBox TextAlignment="Right" VerticalContentAlignment="Center" Width="100" Height="30" FontSize="16" Padding="0,0,5,0" TextChanged="TextBox_TextChanged"/>
+            <StackPanel  Margin="5,0,5,0" 
+                         Orientation="Horizontal" Height="40"  >
+                <Label Content="綠茶大杯" Margin="20, 0, 50, 0"
+                       VerticalContentAlignment="Center" Foreground="#FFB79696" FontSize="16" FontWeight="Bold" />
+                <Label Content="60元" Margin="0, 0, 50, 0"
+                       VerticalContentAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="#FF7A7A9C" />
+				<TextBox Padding="0,0,5,0"
+						 Width="100" Height="30"
+						 TextAlignment="Right" VerticalContentAlignment="Center"  FontSize="16"
+						 TextChanged="TextBox_TextChanged"/>
             </StackPanel>
-            <StackPanel Height="40" Margin="5,0,5,0" Orientation="Horizontal" >
-                <Label Content="綠茶小杯" VerticalContentAlignment="Center" Foreground="#FFB79696" FontSize="16" FontWeight="Bold" Margin="20, 0, 50, 0"/>
-                <Label Content="30元" VerticalContentAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="#FF7A7A9C" Margin="0, 0, 100, 0"/>
-                <TextBox TextAlignment="Right" VerticalContentAlignment="Center" Width="100" Height="30" FontSize="16" Padding="0,0,5,0" TextChanged="TextBox_TextChanged"/>
+            <StackPanel Margin="5,0,5,0"
+                        Orientation="Horizontal" Height="40"  >
+                <Label Content="綠茶小杯" Margin="20, 0, 50, 0"
+                       VerticalContentAlignment="Center" Foreground="#FFB79696" FontSize="16" FontWeight="Bold" />
+                <Label Content="40元" Margin="0, 0, 50, 0"
+                       VerticalContentAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="#FF7A7A9C" />
+				<TextBox Padding="0,0,5,0"
+						 Width="100" Height="30"
+						 TextAlignment="Right" VerticalContentAlignment="Center"  FontSize="16"
+						 TextChanged="TextBox_TextChanged"/>
             </StackPanel>
-            <StackPanel Height="40" Margin="5,0,5,0" Orientation="Horizontal" >
-                <Label Content="可樂大杯" VerticalContentAlignment="Center" Foreground="#FFB79696" FontSize="16" FontWeight="Bold" Margin="20, 0, 50, 0"/>
-                <Label Content="50元" VerticalContentAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="#FF7A7A9C" Margin="0, 0, 100, 0"/>
-                <TextBox TextAlignment="Right" VerticalContentAlignment="Center" Width="100" Height="30" FontSize="16" Padding="0,0,5,0" TextChanged="TextBox_TextChanged"/>
+            <StackPanel Margin="5,0,5,0"
+                        Orientation="Horizontal" Height="40"   >
+                <Label Content="可樂大杯" Margin="20, 0, 50, 0"
+                       VerticalContentAlignment="Center" Foreground="#FFB79696" FontSize="16" FontWeight="Bold" />
+                <Label Content="50元" Margin="0, 0, 50, 0"
+                       VerticalContentAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="#FF7A7A9C" />
+				<TextBox Padding="0,0,5,0"
+						 Width="100" Height="30"
+						 TextAlignment="Right" VerticalContentAlignment="Center"  FontSize="16"
+						 TextChanged="TextBox_TextChanged"/>
             </StackPanel>
-            <StackPanel Height="40" Margin="5,0,5,0" Orientation="Horizontal" >
-                <Label Content="可樂小杯" VerticalContentAlignment="Center" Foreground="#FFB79696" FontSize="16" FontWeight="Bold" Margin="20, 0, 50, 0"/>
-                <Label Content="30元" VerticalContentAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="#FF7A7A9C" Margin="0, 0, 100, 0"/>
-                <TextBox TextAlignment="Right" VerticalContentAlignment="Center" Width="100" Height="30" FontSize="16" Padding="0,0,5,0" TextChanged="TextBox_TextChanged"/>
+            <StackPanel Margin="5,0,5,0"
+                        Orientation="Horizontal" Height="40"  >
+                <Label Content="可樂小杯" Margin="20, 0, 50, 0"
+                       VerticalContentAlignment="Center" Foreground="#FFB79696" FontSize="16" FontWeight="Bold" />
+                <Label Content="30元" Margin="0, 0, 50, 0"
+                       VerticalContentAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="#FF7A7A9C" />
+				<TextBox Padding="0,0,5,0"
+						 Width="100" Height="30"
+						 TextAlignment="Right" VerticalContentAlignment="Center"  FontSize="16"
+						 TextChanged="TextBox_TextChanged"/>
             </StackPanel>
         </StackPanel>
-        <Button x:Name="OrderButton" Content="確定訂購" Margin="0,25,36,0" VerticalAlignment="Top" Height="60" FontSize="18" FontWeight="Bold" HorizontalAlignment="Right" Width="100" />
-        <TextBlock x:Name="ResultTextBlock" Margin="20,285,30,35" TextWrapping="Wrap" Background="#FFF7F3D4"/>
-
+        <!--1.設定button名稱和顯示內容和邊距 2.設定高度寬度和排版方式 3.設定字體大小、粗細-->
+        <Button x:Name="OrderButton" Content="確定訂購" Margin="0,25,30,0" 
+                VerticalAlignment="Top" HorizontalAlignment="Right" Height="60" Width="100"
+                FontSize="18" FontWeight="Bold"  />
+        <!--1.設定textblock名稱和邊距和背景顏色 2.設定文字的呈現方式-->
+        <TextBlock x:Name="ResultTextBlock" Margin="20,285,30,35" Background="#FFF7F3D4"
+                   TextWrapping="Wrap" />
     </Grid>
 
 
